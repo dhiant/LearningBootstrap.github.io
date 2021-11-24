@@ -1,0 +1,86 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.intro-section {
+    @include gradient;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0 0 0;
+    h4{
+        color: $white;
+        font-family: 'Poppins',sans-serif;
+    }
+    a{
+        color: $primary;
+        text-decoration: none;
+    }
+
+}
+// css for  the name & description 
+.display-2 {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    color:$white;
+    font-family: 'Poppins', sans-serif;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &--description {
+        font-size: 1.0rem;
+        display: block;
+        margin-top: 1.25rem;
+        line-height: 25px;
+        letter-spacing: 2px;
+        text-transform: none;
+    }
+    .getIn{
+        font-family: 'Poppins',sans-serif;
+        :hover{
+            color:#fff;
+        }
+    }
+}
+// css for the videos section
+// .intros {
+
+//     .video-box {
+//         position: relative;
+//         a {
+//            @include media-breakpoint-up(xl) {
+//                position: absolute !important;
+//                top:50% !important;
+//                margin-left: 45px;
+//            }
+//             span{
+
+//                 i{
+//                     font-size: 6rem;
+//                     color: $primary;
+//                 }
+//             }
+//         }
+//     }
+// }
+// // css to give border around play icon
+// .icon-border {
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     width:6rem;
+//     height:6rem;
+//     border:0.37rem solid #629e44;
+//     border-radius: 50%;
+//     animation: iconBorder 1.5s linear infinite ;
+
+//     &--animation1{
+//         animation-delay: 1s;
+//     }
+
+//     &--animation2 {
+//         animation-delay: 1.5s;
+//     }
+// }

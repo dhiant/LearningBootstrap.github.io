@@ -1,0 +1,22 @@
+@use '../custom' as *;
+
+.headerline::before{
+    content: "";
+    width:9rem;
+    height: 0.11rem;
+    margin: 0 auto;
+    background-color: $primary;
+    display: block;
+}
+.headerline::after{
+    content: "";
+    width: 1.12rem;
+    height: 0.12rem;
+    background-color: $primary;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+

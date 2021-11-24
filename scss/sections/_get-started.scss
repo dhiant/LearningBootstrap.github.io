@@ -1,0 +1,42 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.get-started {
+    background-color: $gray-200;
+    padding: 4rem 0;
+}
+.cta-info {
+    @include gradient;
+    padding: 3rem;
+    font-family: 'Poppins',sans-serif;
+    
+    ul {
+        list-style: none;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        margin-bottom: 0.7rem;
+        
+        li::before{
+            font-family:"Font Awesome 5 Free" ;
+            content: "\f00c";
+            font-weight: 600;
+            margin-right: 0.3rem;
+        }
+    }
+}
+
+// css for form section
+.contact-section{
+    form{
+        .submit {
+            color: #fff;
+            font-family: 'Poppins',sans-serif;
+            &::after{
+                font-size: 1rem;
+                content: "\f1d8";
+                font-family: "Font Awesome 5 Free";
+                color: #fff;
+            }
+        }
+    }
+}

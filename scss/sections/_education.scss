@@ -1,0 +1,48 @@
+@use '../custom'as *;
+
+// creating a headerline
+.headerline::before{
+    content: "";
+    width:9rem;
+    height: 0.11rem;
+    margin: 0 auto;
+    background-color: $primary;
+    display: block;
+}
+.headerline::after{
+    content: "";
+    width: 1.12rem;
+    height: 0.12rem;
+    background-color: $primary;
+    display: block;
+    margin: 0 auto;
+}
+// css for images
+.logo-box {
+    margin-top: 20px;
+    max-width:100%;
+    height: 6rem;
+    margin-bottom:5rem;
+    position: relative;
+    padding: 0.5rem;
+    text-align: center;
+
+    img {
+        height: 100%;
+
+        &:hover {
+            filter: grayscale(120);
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .logo-box {
+        height: 8rem;
+    }
+ }
+ @include media-breakpoint-up(lg) {
+     .logo-box {
+         height:8rem;
+     }
+ }
+
